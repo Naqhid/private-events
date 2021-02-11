@@ -291,7 +291,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   rspec-rails
-  rubocop (~> 1.9)
+  rubocop (~> 1.9.1)
   sass-rails (>= 6)
   selenium-webdriver
   spring
