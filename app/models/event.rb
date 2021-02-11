@@ -5,6 +5,6 @@ class Event < ApplicationRecord
   has_many :attendances, dependent: :destroy
   has_many :attendees, through: :attendances, source: :user
 
-  scope :past, -> { where('date_time < ?', Date.today).order(date_time: :desc) }
-  scope :future, -> { where('date_time > ?', Date.today).order(:date_time) }
+  scope :upcoming_events, -> { where('date >= ?', Date.today) }
+  scope :past_events, -> { where('date < ?', Date.today) }
 end

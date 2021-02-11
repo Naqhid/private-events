@@ -1,4 +1,7 @@
-class CreateEvents < ActiveRecord::Migration[6.1]
+# frozen_string_literal: true
+
+# rubocop:todo Style/Documentation
+class CreateEvents < ActiveRecord::Migration[6.0]
   def change
     create_table :events do |t|
       t.string :title
@@ -10,3 +13,4 @@ class CreateEvents < ActiveRecord::Migration[6.1]
     end
   end
 end
+# rubocop:enable Style/Documentation
