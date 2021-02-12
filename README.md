@@ -45,6 +45,12 @@ To get a local copy up and running follow these simple example steps.
 - `bundle install`
 - `rails db:migrate`
 
+## Test
+
+- Run `rails test:mailers` in your terminal to see if all tests are passing
+- Run `bundle exec rspec spec` to see if Rspec test unit passing
+
+
 ## Usage
 
 - Go to respective directory and run
